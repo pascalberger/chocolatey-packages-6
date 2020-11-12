@@ -32,4 +32,4 @@ if ((Get-AppxPackage -name $AppxPackageName).Version -Match $version) {
   }
 }
 
-Add-AppxPackage -Path $fileName
+Add-AppxProvisionedPackage -Online -PackagePath $fileName -SkipLicense
